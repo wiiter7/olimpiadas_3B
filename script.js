@@ -1,7 +1,5 @@
 const modalidades = ["Ginástica", "Judô", "Surfe", "Vôlei"];
 
-//Com base na constante modalidade, 
-//Coloque o número que represente o esporte do seu grupo
 const escolha = 1;
 
 document.querySelector('body').style.backgroundImage = "url('img/"+modalidades[escolha]+".png')";
@@ -17,9 +15,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
-
-//Assim como a variável atual (acima)
-//Crie uma variável com o nome pontos que inicie com 0
+let pontos = 0;
 
 
 function mostraPergunta(){
