@@ -72,6 +72,9 @@ function podiumMedalhas(){
         caixaPrincipal.style.backgroundImage = "url('img/ouro.png')";
         caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!";
     }
+    else if(pontos <= 3)
+        caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
+        caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
 }
 
 
