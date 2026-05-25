@@ -2,7 +2,7 @@ const modalidades = ["Ginástica", "Judô", "Surfe", "Vôlei"];
 
 //Com base na constante modalidade, 
 //Coloque o número que represente o esporte do seu grupo
-const escolha = ?;
+const escolha = 1;
 
 document.querySelector('body').style.backgroundImage = "url('img/"+modalidades[escolha]+".png')";
 document.querySelector('title').textContent = "Missão Olímpica | "+modalidades[escolha];
@@ -58,6 +58,22 @@ function mostraResultado(){
     // chame a função podiumMedalhas aqui
     
 }
+
+function podiumMedalhas(){
+    if (pontos === 3){
+        caixaPrincipal.style.backgroundImage = "url('img/bronze.png')";
+        caixaPerguntas.textContent = "Resultado da competição: 3 pontos é BRONZE!";
+    }
+    else if(pontos === 4){
+        caixaPrincipal.style.backgroundImage = "url('img/prata.png')";
+        caixaPerguntas.textContent = "Resultado da competição: 4 pontos é PRATA!";
+    }
+    else if(pontos === 5){
+        caixaPrincipal.style.backgroundImage = "url('img/ouro.png')";
+        caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!";
+    }
+}
+
 
 //crie uma função podiumMedalhas
 //E verifique a quantidade de pontos
